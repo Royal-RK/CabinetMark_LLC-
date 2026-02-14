@@ -16,6 +16,7 @@ body {
   --primary-color: #ffffff;
   --header-top-bg: #0d0d0d;
   --primary-btn-color: #95a986;
+  --mission-sec-bg-color: #f6f6f6;
   --primary-btn-hover-color: #64804d;
   --nav-link-hover-color: #94cb69;
   --foot-text-color: #5e5e5e;
@@ -100,12 +101,6 @@ nav {
   height: 100%;
   object-fit: contain;
 }
-/* .navbar .nav-item {
-  margin-right: 40px;
-} */
-/* .nav-item:last-child {
-  margin: 0 !important;
-} */
 .nav-item:not(:last-child) {
   margin-right: 36px;
 }
@@ -136,10 +131,6 @@ nav {
 .nav-link.active::after {
   opacity: 1;
 }
-/* .nav-btn {
-  margin-left: 45px !important;
-  margin-left: auto !important ;
-} */
 .nav-btn .contact-btn {
   position: relative;
   margin-right: calc(2 * 2);
@@ -241,147 +232,48 @@ nav {
 
 /*================== Banner ======================*/
 .bnr-sec {
-  padding: 223px 0 213px;
+  padding: 223px 0 149px;
   /* min-height: 100vh; */
-  background: url("../assets/banner-bg.png") no-repeat center/cover;
+  background: url("../assets/about-bnr-bg.png") no-repeat center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-
-.bnr-sec .bnr-cnt {
-  /* text-align: center; */
-  display: inline-block;
+.bnr-cnt {
+  padding: 28px 70px;
   background: var(--primary-color);
-  padding: 76px 59px 75px 60px;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  display: inline-block;
   border-radius: 20px;
 }
 .bnr-cnt .title-1 {
-  font-family: var(--font-amiri) !important;
-  font-weight: bold !important;
-  margin-bottom: 35px;
-}
-.bnr-cnt p {
-  font-size: 16px;
-  line-height: calc(25 / 16);
-  font-family: var(--font-popins);
-}
-.bnr-btn {
-  margin-top: 35px;
-}
-.explor-btn {
-  padding: 29px 38px !important;
-  background-color: var(--primary-btn-color) !important;
-  border-radius: 60px !important;
-  font-size: 18px;
-  font-family: var(--font-popins);
-  text-transform: uppercase;
-  font-weight: 400;
-  letter-spacing: 4.32px;
-  line-height: calc(92 / 18);
-  transition: 0.5s linear !important;
-  overflow: hidden;
-}
-.explor-btn svg {
-  margin-left: 16px !important;
-  transition: 0.8s linear;
-}
-.explor-btn > svg > path {
-  transition: 0.5s linear !important;
-}
-.explor-btn:hover {
-  transform: scale(1.05);
-  color: var(--primary-color) !important;
-  background: var(--primary-btn-hover-color) !important;
-}
-.explor-btn:hover svg {
-  transform: translateX(85px);
-}
-.explor-btn:hover svg > path {
-  fill: var(--primary-color) !important;
-}
-
-/*=================== Product & Arrival =================*/
-.prodct-sec {
-  padding: 100px 0 !important;
-}
-.prodct-cnt {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 30px !important;
-}
-.prodct-cnt > .prodct-title p {
-  font-size: 16px;
-  letter-spacing: 2.2px;
-  text-transform: uppercase !important;
-  margin-bottom: 14px !important;
-  color: var(--primary-btn-color) !important;
-}
-.prodct-title .title-2 {
-  text-transform: uppercase;
   font-family: var(--font-amiri);
-  font-weight: 400;
-  margin-bottom: 25px;
+  font-weight: bold;
+  text-transform: capitalize;
 }
-.prodct-title .prodct-slide-btn {
-  display: flex;
-  justify-content: center;
-}
-.prodct-slide-btn .left-arrow-btn {
-  margin-right: 35px;
-}
-.prodct-row {
-  --bs-gutter-x: 24px !important;
-}
-.prodct-cards .prodct-img {
-  max-width: 347px !important;
-  height: 382px !important;
-}
-.prodct-img img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-}
-.prodct-cards .card-img-1,
-.card-img-1 img,
-.prodct-cards .card-img-3,
-.card-img-3 img {
-  border-top-right-radius: 30px;
-}
-.prodct-cards .card-img-2,
-.card-img-2 img,
-.prodct-cards .card-img-4,
-.card-img-4 img {
-  border-top-left-radius: 30px;
-}
-.prodct-cards .prodct-card-cnt {
-  margin-top: 22px;
-}
-.prodct-card-cnt .prodct-star {
-  margin-bottom: 10px;
-}
-.prodct-card-cnt p {
-  max-width: 325px;
-  font-size: 18px;
-  font-family: var(--font-amiri);
-  line-height: calc(24 / 20);
-  margin-bottom: 6px;
-}
-.prodct-card-cnt .prodct-price {
-  font-size: var(--font-Gothic-A1);
-  font-size: 15px;
-  line-height: calc(32 / 15);
-}
-
-/*=================== Success =========================*/
-.success-sec {
+/*======================== About ====================*/
+.abt-sec {
   padding: 100px 0;
 }
+.abt-cnt p {
+  margin-top: 14px !important;
+}
+.abt-imges {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px !important;
+}
+/*=================== Success =========================*/
+.success-sec {
+  background: var(--mission-sec-bg-color);
+  padding: 100px 0;
+  display: flex;
+}
 .success-row {
+  /* margin: 0 calc(-150px / 2); */
   --bs-gutter-x: 150px !important;
+  display: flex;
+  align-items: center;
 }
 .success-left-imgs .fst-img {
   position: relative;
@@ -419,81 +311,6 @@ nav {
   line-height: calc(25 / 16);
   font-family: var(--font-popins);
   margin: 25px 0 30px;
-}
-.read-btn {
-  padding: 16px 35px;
-  font-family: var(--font-popins);
-  font-size: 18px;
-  line-height: calc(92 / 18);
-  text-transform: uppercase;
-  background-color: var(--primary-btn-color) !important;
-  border-radius: 50px !important;
-  transition: 0.5s linear !important;
-  overflow: hidden;
-}
-.read-btn svg {
-  margin-left: 10px;
-  transform: translateY(-30%);
-  transition: 0.9s linear !important;
-}
-.read-btn svg path {
-  transition: 0.5s linear !important;
-}
-.read-btn:hover {
-  background: var(--primary-btn-hover-color) !important;
-  transform: scale(1.05);
-  color: var(--primary-color) !important;
-}
-.read-btn:hover svg {
-  transform: translateX(59px);
-}
-.read-btn:hover svg path {
-  fill: var(--primary-color) !important;
-}
-
-/*================== Offer ================*/
-.offer-sec {
-  padding: 100px 0 40px;
-}
-.offer-cnt {
-  text-align: center;
-  margin-bottom: 52px;
-}
-.offer-cnt > p {
-  font-size: 16px;
-  letter-spacing: 2.2px;
-  color: var(--primary-btn-color) !important;
-  font-family: var(--font-popins);
-  font-weight: 500 !important;
-  text-transform: uppercase;
-  margin-bottom: 19px;
-}
-.offer-cnt .title-2 {
-  font-family: var(--font-amiri);
-  line-height: calc(60 / 45);
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-.offer-row {
-  --bs-gutter-x: 133px;
-}
-.offer-card {
-  text-align: center;
-  margin-bottom: 30px !important;
-}
-.offer-card .offer-card-img {
-  display: inline-block;
-  margin-bottom: 32px !important;
-}
-.offer-card .offer-card-cnt .title-3 {
-  font-family: var(--font-amiri);
-  font-weight: bold;
-  text-transform: uppercase;
-}
-.offer-card.offer-card-cnt p {
-  font-size: 16px;
-  font-family: var(--font-popins);
-  line-height: calc(25 / 16);
 }
 
 /*=========== Footer ============*/
@@ -750,16 +567,6 @@ nav {
   .bnr-sec {
     padding: 190px 0 180px !important;
   }
-  .bnr-cnt {
-    padding: 56px 39px 55px 40px !important;
-  }
-  .explor-btn {
-    padding: 15px 20px !important;
-    letter-spacing: 2.16px !important;
-  }
-  .explor-btn svg {
-    margin-left: 8px;
-  }
 }
 
 @media screen and (max-width: 992px) {
@@ -773,32 +580,6 @@ nav {
   /*=============== Banner =============*/
   .bnr-sec {
     padding: 110px 0 60px !important;
-  }
-  .bnr-cnt {
-    padding: 36px 29px 25px 20px !important;
-  }
-  .explor-btn {
-    padding: 10px 15px !important;
-    letter-spacing: 1.8px !important;
-  }
-  .explor-btn > svg {
-    margin-left: 4px;
-  }
-
-  /*============= Product & Arrival ============*/
-  .prodct-sec {
-    padding: 40px 0 !important;
-  }
-  .product-row > div {
-    display: flex;
-    justify-content: center;
-  }
-  .prodct-cards {
-    margin-bottom: 25px !important;
-  }
-  /*=========== Offer ============*/
-  .offer-sec {
-    padding: 40px 0 !important;
   }
 
   /*=============== Success ============*/
@@ -841,14 +622,9 @@ nav {
   p {
     font-size: 16px !important;
   }
-  /*================== product & Arrival ===================*/
-  .prodct-sec {
-    padding: 40px 0 !important;
-  }
-  .prodct-cnt {
-    flex-direction: column;
-    text-align: center;
-    margin: 0 auto 20px !important;
+  /*============== Banner ================*/
+  .bnr-cnt {
+    padding: 15px 30px;
   }
   /*=============== Success ============*/
   .success-cnt {
@@ -858,10 +634,6 @@ nav {
   .success-btn {
     text-align: center;
     /* margin: 0 auto; */
-  }
-  .read-btn {
-    padding: 8px 16px !important;
-    font-size: 14px !important;
   }
   .read-btn svg {
     margin-left: 5px;
@@ -885,14 +657,6 @@ nav {
     height: 100%;
   }
 
-  /*=============== Offer =============*/
-  .offer-sec {
-    padding: 90px 0;
-  }
-
-  .offer-card {
-    margin-bottom: 25px;
-  }
   /*==================== footer ================*/
   .foot-cnt {
     text-align: center;
