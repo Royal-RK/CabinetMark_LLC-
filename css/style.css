@@ -255,7 +255,7 @@ nav {
   /* text-align: center; */
   display: inline-block;
   background: var(--primary-color);
-  padding: 76px 59px 75px 60px;
+  padding: 56px 59px 55px 60px;
   box-shadow: var(--common-shadow);
   border-radius: 20px;
 }

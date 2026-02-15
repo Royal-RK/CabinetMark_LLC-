@@ -235,7 +235,7 @@ nav {
 .bnr-sec {
   padding: 223px 0 149px;
   /* min-height: 100vh; */
-  background: url("../assets/cotact-us-bnr-bg.png") no-repeat center/cover;
+  background: url("../assets/about-bnr-bg.png") no-repeat center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -252,122 +252,6 @@ nav {
   font-family: var(--font-amiri);
   font-weight: bold;
   text-transform: capitalize;
-}
-/*======================== Touch ====================*/
-.touch-sec {
-  padding: 100px 0;
-  background: var(--mission-sec-bg-color);
-}
-.touch-row {
-  --bs-gutter-x: 29px;
-}
-.touch-cards .card-one {
-  padding: 29px 0 43px !important;
-}
-.touch-cards .card {
-  text-align: center;
-  padding: 23px 0 43px;
-  border-radius: 18px;
-  border: none;
-  box-shadow: var(--common-shadow) !important;
-}
-.touch-cards .card {
-  margin-bottom: 28px;
-  transition: 0.5s linear !important;
-}
-.touch-cards .card-one .title-3 {
-  margin: 19px 0 22px !important;
-}
-.touch-cards .card .title-3 {
-  font-family: var(--font-amiri);
-  font-weight: bold;
-  margin: 36px 0 21px;
-}
-.touch-cards .card:hover {
-  transform: scale(1.02);
-}
-.touch-cnt {
-  padding: 51px 50px 62px;
-  box-shadow: 0 14px 83px rgba(149, 169, 134, 0.11);
-  border-radius: 18px;
-  background-color: var(--primary-color);
-}
-.touch-cnt .title-2 {
-  font-family: var(--font-amiri);
-  line-height: calc(60 / 45);
-  text-transform: uppercase;
-}
-.touch-cnt .common-icon {
-  margin: 21px 0 18px;
-}
-.touch-cnt p {
-  font-size: 16px;
-  margin-bottom: 30px;
-  font-family: var(--font-popins);
-  line-height: calc(25 / 16);
-  text-transform: capitalize;
-  color: var(--foot-text-color);
-}
-.touch-cnt .contact-form .input-box {
-  width: 100%;
-  margin-bottom: 30px;
-  padding: 25px 0 24px 20px;
-  font-size: 16px;
-  font-family: var(--font-popins);
-  font-weight: 300;
-  line-height: calc(27 / 16);
-  border-radius: 18px;
-  border: 1px solid var(--foot-text-color);
-}
-.touch-cnt .contact-form .one-line {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
-.contact-form .input-ph,
-.contact-form .input-sub {
-  width: 50%;
-  margin-bottom: 30px;
-  padding: 25px 0 24px 20px;
-  font-size: 16px;
-  font-family: var(--font-popins);
-  font-weight: 300;
-  line-height: calc(27 / 16);
-  border-radius: 18px;
-  border: 1px solid var(--foot-text-color);
-}
-.textarea {
-  height: 252px;
-  width: 100%;
-  margin-bottom: 77px;
-  padding: 25px 0 0 20px;
-  font-size: 16px;
-  font-family: var(--font-popins);
-  font-weight: 300;
-  line-height: calc(27 / 16);
-  border-radius: 18px;
-  border: 1px solid var(--foot-text-color);
-}
-.submit-btn {
-  padding: 20px 35px !important;
-  border-radius: 50px !important;
-  background: var(--primary-btn-color) !important;
-  font-size: 18px !important;
-  font-family: var(--font-popins) !important;
-  text-transform: uppercase !important;
-  transition: 0.5s linear !important;
-}
-.submit-btn:hover {
-  transform: scaleX(1.05);
-  background-color: var(--primary-btn-hover-color) !important;
-  color: var(--mission-sec-bg-color) !important;
-}
-.input-field {
-  transition: 0.5s linear;
-}
-.input-field:hover {
-  transform: scaleX(1.03);
-  border-color: var(--primary-btn-color) !important;
 }
 
 /*======================= Footer ========================*/
@@ -638,19 +522,6 @@ nav {
   .bnr-sec {
     padding: 110px 0 60px !important;
   }
-  /*=========== Touch ===========*/
-  .touch-sec {
-    padding: 40px 0;
-  }
-  .touch-cards .card {
-    padding: 10px 23px;
-  }
-  .touch-cnt {
-    padding: 31px 30px 40px;
-  }
-  .textarea {
-    margin-bottom: 32px;
-  }
   /*=========== Foot ===========*/
   .foot-sec {
     padding: 40px 0 !important;
@@ -685,10 +556,6 @@ nav {
   /*============== Banner ================*/
   .bnr-cnt {
     padding: 15px 30px;
-  }
-  /*============= Touch =============*/
-  .touch-cnt {
-    padding: 15px 15px 20px;
   }
 
   /*==================== footer ================*/
