@@ -24,6 +24,7 @@ body {
   --font-amiri: "Amiri", serif;
   --font-Roboto-Condensed: "Roboto Condensed", sans-serif;
   --font-Gothic-A1: "Gothic A1", sans-serif;
+  --common-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 .container {
   max-width: 1484px;
@@ -45,6 +46,7 @@ header {
 }
 .title-1 {
   font-size: 68px;
+  margin: 0 !important;
 }
 .title-2 {
   font-size: 45px;
@@ -76,7 +78,6 @@ header {
 /*================== Navbar ====================*/
 .nav-container {
   max-width: 1743.97px !important;
-  /* padding: 8px 0; */
 }
 .navbar .container {
   display: flex;
@@ -245,6 +246,7 @@ nav {
   background: var(--primary-color);
   display: inline-block;
   border-radius: 20px;
+  box-shadow: var(--common-shadow) !important;
 }
 .bnr-cnt .title-1 {
   font-family: var(--font-amiri);
@@ -255,32 +257,78 @@ nav {
 .abt-sec {
   padding: 100px 0;
 }
+.abt-row {
+  display: flex;
+  align-items: center;
+  --bs-gutter-x: 64px;
+}
+.abt-cnt .abt-sub-title {
+  font-size: 16px;
+  font-family: var(--font-popins);
+  width: 500;
+  letter-spacing: 2.2px;
+  text-transform: uppercase;
+  color: var(--primary-btn-color);
+  margin-bottom: 6px;
+}
+.abt-cnt .title-2 {
+  font-family: var(--font-amiri);
+  line-height: calc(60 / 45);
+  text-transform: uppercase;
+}
 .abt-cnt p {
+  max-width: 550px;
+  font-size: 15px;
+  font-family: var(--font-popins);
+  line-height: calc(25 / 16);
+  text-transform: capitalize;
   margin-top: 14px !important;
 }
-.abt-imges {
-    display: flex;
-    justify-content: space-between;
-    gap: 24px !important;
+.abt-fst-img {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px !important;
 }
-/*=================== Success =========================*/
-.success-sec {
+.abt-fst-img .fst-img {
+  max-width: 425px;
+  max-height: 569px;
+  border-bottom-right-radius: 30px;
+}
+.abt-fst-img .fst-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-bottom-right-radius: 30px;
+}
+.abt-scnd-img .scnd-img {
+  max-width: 303px;
+  max-height: 435px;
+  border-top-right-radius: 30px;
+}
+.abt-scnd-img .scnd-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-top-right-radius: 30px;
+}
+/*=================== Mission =========================*/
+.mission-sec {
   background: var(--mission-sec-bg-color);
   padding: 100px 0;
   display: flex;
 }
-.success-row {
+.mission-row {
   /* margin: 0 calc(-150px / 2); */
   --bs-gutter-x: 150px !important;
   display: flex;
   align-items: center;
 }
-.success-left-imgs .fst-img {
+.mission-left-imgs .fst-img {
   position: relative;
   max-width: 641px;
   border-top-right-radius: 30px !important;
 }
-.success-left-imgs .fst-img img {
+.mission-left-imgs .fst-img img {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -300,12 +348,12 @@ nav {
   width: 100%;
   object-fit: contain;
 }
-.success-cnt .title-2 {
+.mission-cnt .title-2 {
   font-family: var(--font-amiri);
   line-height: calc(50 / 45);
   text-transform: uppercase;
 }
-.success-cnt p {
+.mission-cnt p {
   max-width: 580px;
   font-size: 15px;
   line-height: calc(25 / 16);
@@ -313,7 +361,7 @@ nav {
   margin: 25px 0 30px;
 }
 
-/*=========== Footer ============*/
+/*======================= Footer ========================*/
 .foot-sec {
   padding: 60px 0;
 }
@@ -567,6 +615,13 @@ nav {
   .bnr-sec {
     padding: 190px 0 180px !important;
   }
+
+  /*==================== About =======================*/
+
+  .abt-row {
+    align-items: center;
+    --bs-gutter-x: 30px;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -582,17 +637,31 @@ nav {
     padding: 110px 0 60px !important;
   }
 
-  /*=============== Success ============*/
-  .success-sec {
+  /*=================== About ====================*/
+  .abt-sec {
+    padding: 70px 0;
+  }
+  /* .abt-row {
+    justify-content: center;
+    align-items: center;
+  } */
+  .abt-cnt,
+  .abt-fst-img,
+  .abt-scnd-img {
+    margin-bottom: 20px;
+  }
+
+  /*=============== Mission ============*/
+  .mission-sec {
     padding: 40px 0 !important;
   }
-  .success-left-imgs,
-  .success-cnt,
-  .success-cnt p {
+  .mission-left-imgs,
+  .mission-cnt,
+  .mission-cnt p {
     text-align: center;
     margin: 30px auto;
   }
-  .success-left-imgs {
+  .mission-left-imgs {
     margin-bottom: 70px;
   }
   /*=========== Foot ===========*/
@@ -611,7 +680,7 @@ nav {
 }
 @media screen and (max-width: 768px) {
   .title-1 {
-    font-size: 36px;
+    font-size: 30px;
   }
   .title-2 {
     font-size: 22px;
@@ -622,28 +691,48 @@ nav {
   p {
     font-size: 16px !important;
   }
+  /*=============== Header-Top ===============*/
+  .header-top {
+    margin-bottom: 5px;
+  }
   /*============== Banner ================*/
   .bnr-cnt {
     padding: 15px 30px;
   }
-  /*=============== Success ============*/
-  .success-cnt {
+
+  /*================ About ================*/
+  .abt-sec {
+    padding: 50px 0;
+  }
+  .abt-row {
+    justify-content: center;
+    text-align: center;
+  }
+  .abt-fst-img,
+  .abt-scnd-img {
+    justify-content: center !important;
+  }
+  .abt-cnt,
+  .abt-fst-img .fst-img,
+  .abt-scnd-img .scnd-img {
+    text-align: center;
+    margin: 0 auto 20px;
+  }
+  /*=============== Mission ============*/
+  .mission-cnt {
     text-align: center;
     margin: 0 auto;
   }
-  .success-btn {
+  .mission-btn {
     text-align: center;
     /* margin: 0 auto; */
   }
-  .read-btn svg {
-    margin-left: 5px;
-  }
-  .success-left-imgs {
+  .mission-left-imgs {
     text-align: center;
     margin-bottom: 20px;
   }
 
-  .success-left-imgs .fst-img {
+  .mission-left-imgs .fst-img {
     max-width: 100%;
     height: 100%;
   }

@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <!-- Custom css link -->
+    <link rel="stylesheet" href="./css/contact-us.css" />
+    <!-- Bootstrap css cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <div class="title">FREE SHIPPING OVER $35*</div>
+        </div>
+        <nav class="navbar navbar-expand-xl">
+            <div class="container nav-container">
+                <div class="nav-logo">
+                    <a class="navbar-brand d-block" href="contact-us.html">
+                        <img src="./assets/nav-logo.png" alt="" />
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" id="navbarSupportedContent">
+                    <div class="offcanvas-header">
+                        <button type="button" class="close-btn" data-bs-dismiss="offcanvas" aria-label="Close">
+                            <span></span>
+                        </button>
+                    </div>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link shop" href="#">Shop now
+
+                                <svg width="12" height="7" viewBox="0 0 12 7" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.9917 0L11.97 0.979196L6.63841 6.31263C6.55298 6.3986 6.45139 6.46683 6.33949 6.51339C6.22759 6.55995 6.10759 6.58392 5.98638 6.58392C5.86518 6.58392 5.74518 6.55995 5.63328 6.51339C5.52138 6.46683 5.41979 6.3986 5.33436 6.31263L0 0.979196L0.978273 0.000923157L5.985 5.00673L10.9917 0Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">about us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact-us.html">contact us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">blog</a>
+                        </li>
+                    </ul>
+                    <div class="nav-btn d-flex ms-4">
+                        <a href="" class="search-btn btn">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.5833 15.5834L19.2499 19.25" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M17.4167 10.0833C17.4167 6.03324 14.1334 2.75 10.0833 2.75C6.03324 2.75 2.75 6.03324 2.75 10.0833C2.75 14.1334 6.03324 17.4167 10.0833 17.4167C14.1334 17.4167 17.4167 14.1334 17.4167 10.0833Z"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <a href="" class="contact-btn btn">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5 20V19C5 17.1435 5.7375 15.363 7.05025 14.0503C8.36301 12.7375 10.1435 12 12 12V12C13.8565 12 15.637 12.7375 16.9497 14.0503C18.2625 15.363 19 17.1435 19 19V20"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M12 12C13.0609 12 14.0783 11.5786 14.8284 10.8284C15.5786 10.0783 16 9.06087 16 8C16 6.93913 15.5786 5.92172 14.8284 5.17157C14.0783 4.42143 13.0609 4 12 4C10.9391 4 9.92172 4.42143 9.17157 5.17157C8.42143 5.92172 8 6.93913 8 8C8 9.06087 8.42143 10.0783 9.17157 10.8284C9.92172 11.5786 10.9391 12 12 12V12Z"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <div class="nav-last-btn">
+                            <a href="" class="cart-btn btn" data-bs-target="#exampleModal" data-bs-toggle="modal">
+                                <svg width="19" height="20" viewBox="0 0 19 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3.04171 8.52L2.41218 8.44533L3.04171 8.52ZM2.05624 17.8533L2.68578 17.9267L2.05624 17.8533ZM16.9446 17.8533L16.3151 17.9267L16.9446 17.8533ZM15.9592 8.52L16.5887 8.44533L15.9592 8.52ZM2.41218 8.44533L1.42671 17.7787L2.68578 17.9253L3.67124 8.592L2.41218 8.44533ZM3.31531 20H15.6856V18.6667H3.31531V20ZM17.5742 17.7787L16.5887 8.44533L15.3296 8.592L16.3151 17.9253L17.5729 17.7787H17.5742ZM14.6988 6.66667H4.30204V8H14.7014V6.66667H14.6988ZM16.5887 8.44533C16.537 7.9562 16.3157 7.50432 15.9673 7.17616C15.6188 6.848 15.1677 6.6666 14.7001 6.66667V8C14.856 7.99999 15.0065 8.06052 15.1226 8.17C15.2388 8.27948 15.3125 8.43021 15.3296 8.59333L16.5887 8.44667V8.44533ZM15.6856 20C15.9527 19.9999 16.2169 19.9404 16.4607 19.8255C16.7046 19.7106 16.9227 19.5429 17.1008 19.3333C17.2789 19.1237 17.413 18.8768 17.4944 18.609C17.5757 18.3411 17.6025 18.0582 17.5729 17.7787L16.3151 17.9253C16.3251 18.0186 16.3163 18.1131 16.2892 18.2025C16.2621 18.2919 16.2174 18.3743 16.1579 18.4443C16.0985 18.5143 16.0257 18.5703 15.9443 18.6086C15.8629 18.6469 15.7747 18.6667 15.6856 18.6667V20ZM1.42671 17.7787C1.39713 18.0583 1.42393 18.3413 1.50535 18.6093C1.58678 18.8773 1.72099 19.1241 1.89924 19.3338C2.07748 19.5434 2.29573 19.7111 2.53975 19.8259C2.78376 19.9407 3.04803 20 3.31531 20V18.6667C3.22626 18.6667 3.13821 18.6469 3.0569 18.6087C2.9756 18.5704 2.90287 18.5146 2.84346 18.4447C2.78405 18.3749 2.7393 18.2927 2.71213 18.2034C2.68496 18.1141 2.67598 18.0198 2.68578 17.9267L1.42671 17.78V17.7787ZM3.67124 8.592C3.68868 8.42912 3.76252 8.2787 3.87865 8.1695C3.99478 8.0603 4.14506 7.99995 4.30078 8V6.66667C3.83344 6.66692 3.3826 6.84847 3.03442 7.1766C2.68624 7.50473 2.46516 7.95643 2.41344 8.44533L3.67124 8.592ZM6.33378 5.33333V4.66667H5.06711V5.33333H6.33378ZM12.6671 4.66667V5.33333H13.9338V4.66667H12.6671ZM9.50044 1.33333C10.3403 1.33333 11.1457 1.68452 11.7396 2.30964C12.3335 2.93477 12.6671 3.78261 12.6671 4.66667H13.9338C13.9338 3.42899 13.4667 2.242 12.6353 1.36683C11.8039 0.491665 10.6762 0 9.50044 0V1.33333ZM6.33378 4.66667C6.33378 3.78261 6.66741 2.93477 7.26127 2.30964C7.85514 1.68452 8.66059 1.33333 9.50044 1.33333V0C8.32465 0 7.19701 0.491665 6.3656 1.36683C5.53419 2.242 5.06711 3.42899 5.06711 4.66667H6.33378Z"
+                                        fill="white" />
+                                </svg>
+                                <span>cart: </span>
+                                <p>0 item (S)</p>
+                            </a>
+                            <!-- Add to cart modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5 ms-auto" id="exampleModalLabel">
+                                                <!-- Your Cart is Empty -->
+                                                Add Product in Your Cart
+                                            </h1>
+                                            <a class="btn-close" data-bs-dismiss="modal" aria-label="Close"></a>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <a href="" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</a>
+                                            <a href="" class="btn btn-primary">Add Products</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Banner section -->
+    <section class="bnr-sec">
+        <div class="container">
+            <div class="bnr-cnt">
+                <h1 class="title-1">Contact Us</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get in touch section -->
+    <section class="touch-sec">
+        <div class="container">
+            <div class="row touch-row">
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="touch-cards">
+                        <div class="card card-one">
+                            <a href="" class="card-icon">
+                                <svg width="140" height="140" viewBox="0 0 140 140" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g filter="url(#filter0_d_283_1320)">
+                                        <circle cx="69.9521" cy="62.4904" r="48.5" fill="#95A986" />
+                                    </g>
+                                    <path
+                                        d="M88.5082 71.7111L83.0306 66.2334C81.0743 64.2771 77.7485 65.0597 76.966 67.6029C76.3791 69.3636 74.4228 70.3418 72.6621 69.9504C68.7495 68.9723 63.4675 63.8859 62.4893 59.7776C61.9024 58.0169 63.0762 56.0605 64.8369 55.4737C67.3801 54.6912 68.1626 51.3655 66.2063 49.4092L60.7286 43.9315C59.1636 42.5621 56.816 42.5621 55.4466 43.9315L51.7296 47.6485C48.0126 51.5611 52.1208 61.9296 61.3155 71.1242C70.5102 80.3189 80.8786 84.6229 84.7913 80.7102L88.5082 76.9932C89.8777 75.4281 89.8777 73.0805 88.5082 71.7111Z"
+                                        fill="white" />
+                                    <defs>
+                                        <filter id="filter0_d_283_1320" x="0.000225067" y="-2.81334e-05" width="139.904"
+                                            height="139.904" filterUnits="userSpaceOnUse"
+                                            color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                            <feOffset dy="7.46154" />
+                                            <feGaussianBlur stdDeviation="10.726" />
+                                            <feComposite in2="hardAlpha" operator="out" />
+                                            <feColorMatrix type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0" />
+                                            <feBlend mode="normal" in2="BackgroundImageFix"
+                                                result="effect1_dropShadow_283_1320" />
+                                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_283_1320"
+                                                result="shape" />
+                                        </filter>
+                                    </defs>
+                                </svg>
+                            </a>
+                            <h3 class="title-3">Phone</h3>
+                            <p>+1-012-500-0000</p>
+                        </div>
+                        <div class="card">
+                            <a href="" class="card-icon">
+                                <svg width="140" height="140" viewBox="0 0 140 140" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g filter="url(#filter0_d_283_1299)">
+                                        <circle cx="69.9521" cy="62.4904" r="48.5" fill="#95A986" />
+                                    </g>
+                                    <path
+                                        d="M93.0381 48.3515L78.784 62.5138L93.0381 76.6761C93.2958 76.1376 93.4521 75.5422 93.4521 74.9064V50.1212C93.4521 49.4853 93.2958 48.89 93.0381 48.3515ZM89.3213 45.9904H50.583C49.9471 45.9904 49.3518 46.1467 48.8133 46.4044L67.0315 64.5308C68.6424 66.1417 71.2619 66.1417 72.8728 64.5308L91.091 46.4044C90.5525 46.1467 89.9572 45.9904 89.3213 45.9904ZM46.8662 48.3515C46.6085 48.89 46.4521 49.4853 46.4521 50.1212V74.9064C46.4521 75.5422 46.6085 76.1376 46.8662 76.6761L61.1203 62.5138L46.8662 48.3515Z"
+                                        fill="white" />
+                                    <path
+                                        d="M76.8371 64.4611L74.8201 66.4781C72.136 69.1622 67.7686 69.1622 65.0846 66.4781L63.0676 64.4611L48.8135 78.6234C49.352 78.8811 49.9474 79.0374 50.5832 79.0374H89.3215C89.9574 79.0374 90.5527 78.8811 91.0913 78.6234L76.8371 64.4611Z"
+                                        fill="white" />
+                                    <defs>
+                                        <filter id="filter0_d_283_1299" x="0.000225067" y="-2.81334e-05" width="139.904"
+                                            height="139.904" filterUnits="userSpaceOnUse"
+                                            color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                            <feOffset dy="7.46154" />
+                                            <feGaussianBlur stdDeviation="10.726" />
+                                            <feComposite in2="hardAlpha" operator="out" />
+                                            <feColorMatrix type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0" />
+                                            <feBlend mode="normal" in2="BackgroundImageFix"
+                                                result="effect1_dropShadow_283_1299" />
+                                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_283_1299"
+                                                result="shape" />
+                                        </filter>
+                                    </defs>
+                                </svg>
+                            </a>
+                            <h3 class="title-3">Call Us</h3>
+                            <p>cabinetmark@.com</p>
+                        </div>
+                        <div class="card">
+                            <a href="" class="card-icon">
+                                <svg width="140" height="140" viewBox="0 0 140 140" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g filter="url(#filter0_d_283_1310)">
+                                        <circle cx="69.9521" cy="62.4904" r="48.5" fill="#95A986" />
+                                    </g>
+                                    <path
+                                        d="M70.4521 37.9904C60.5281 37.9904 52.4521 46.1224 52.4521 56.1204C52.4521 70.3264 68.7601 84.9944 69.4541 85.6104C69.7285 85.8559 70.0836 85.9918 70.4518 85.9922C70.8199 85.9926 71.1753 85.8574 71.4501 85.6124C72.1441 84.9944 88.4521 70.3264 88.4521 56.1204C88.4521 46.1224 80.3761 37.9904 70.4521 37.9904ZM70.4521 65.9904C64.9381 65.9904 60.4521 61.5044 60.4521 55.9904C60.4521 50.4764 64.9381 45.9904 70.4521 45.9904C75.9661 45.9904 80.4521 50.4764 80.4521 55.9904C80.4521 61.5044 75.9661 65.9904 70.4521 65.9904Z"
+                                        fill="white" />
+                                    <defs>
+                                        <filter id="filter0_d_283_1310" x="0.000225067" y="-2.81334e-05" width="139.904"
+                                            height="139.904" filterUnits="userSpaceOnUse"
+                                            color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                            <feOffset dy="7.46154" />
+                                            <feGaussianBlur stdDeviation="10.726" />
+                                            <feComposite in2="hardAlpha" operator="out" />
+                                            <feColorMatrix type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0" />
+                                            <feBlend mode="normal" in2="BackgroundImageFix"
+                                                result="effect1_dropShadow_283_1310" />
+                                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_283_1310"
+                                                result="shape" />
+                                        </filter>
+                                    </defs>
+                                </svg>
+                            </a>
+                            <h3 class="title-3">Email Us</h3>
+                            <p>1605 Park Street, Castle Rock, CO 80109</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-8 col-lg-8">
+                    <div class="touch-cnt">
+                        <h2 class="title-2">Get In touch</h2>
+                        <div class="common-icon">
+                            <a href="" class="left-icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="10" width="14.1421" height="14.1421" transform="rotate(45 10 0)"
+                                        fill="#95A986" />
+                                    <rect x="10" y="3.77815" width="8.81302" height="8.81302"
+                                        transform="rotate(45 10 3.77815)" fill="#95A986" stroke="white" />
+                                </svg>
+                            </a>
+                            <a href="" class="right-icon">
+                                <svg width="40" height="6" viewBox="0 0 40 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 2.88672L2.88675 5.77347L5.7735 2.88672L2.88675 -3.5898e-05L0 2.88672ZM39.8867 2.38672L2.88675 2.38672L2.88675 3.38672L39.8867 3.38672L39.8867 2.38672Z"
+                                        fill="url(#paint0_linear_283_82)" />
+                                    <defs>
+                                        <linearGradient id="paint0_linear_283_82" x1="39.8867" y1="1.88672" x2="2.88675"
+                                            y2="1.88672" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#95A986" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#95A986" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </div>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the
+                        </p>
+                        <form class="contact-form">
+                            <input type="text" name="name" id="name" autocomplete="off" placeholder="Name" class="input-box input-field">
+                            <input type="email" name="email" id="email" autocomplete="off" placeholder="Email" class="input-box input-field">
+                            <div class="one-line">
+                                <input type="text" name="Phone" id="Phone" autocomplete="off" placeholder="Phone" class="input-ph input-field">
+                                <input type="text" name="subject" id="subject" autocomplete="off" placeholder="Subject" class="input-sub input-field">
+                            </div>
+                            <textarea placeholder="Message" id="Message" name="Message" class="textarea input-field" required></textarea>
+                            <a href="" class="submit-btn btn">SUBMIT</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <section class="foot-sec">
+        <div class="container">
+            <div class="row foot-row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="foot-cnt fst-cnt">
+                        <h3 class="title-3">Get up to 10% off!</h3>
+                        <ul class="foot-sub foot-sub-one">
+                            <li class="foot-pera">
+                                <a href="" class="foot-links">Be the first to know about new arrivals and</a>
+                            </li>
+                            <li class="foot-pera">
+                                <a href="" class="foot-links">exclusive offers.</a>
+                            </li>
+                        </ul>
+                        <form class="footer-form">
+                            <input type="email" placeholder="Enter Your email" required />
+                            <a href="" class="foot-btn btn">Subscribe</a>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-2">
+                    <div class="foot-cnt">
+                        <h3 class="title-3">Quick Links</h3>
+                        <ul class="foot-sub">
+                            <li class="foot-pera">
+                                <a href="" class="foot-links">home</a>
+                            </li>
+                            <li class="foot-pera">
+                                <a href="" class="foot-links">about us</a>
+                            </li>
+                            <li class="foot-pera">
+                                <a href="" class="foot-links">Shop now</a>
+                            </li>
+                            <li class="foot-pera">
+                                <a href="" class="foot-links">Contact Us</a>
+                            </li>
+                            <li class="foot-pera">
+                                <a href="" class="foot-links">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="foot-cnt">
+                        <h3 class="title-3">Institutional</h3>
+                        <ul class="foot-sub">
+                            <li class="foot-pera">
+                                <a href="" class="foot-links">Privacy Policy</a>
+                            </li>
+                            <li class="foot-pera">
+                                <a href="" class="foot-links">Terms & Conditions</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="foot-cnt last-cnt">
+                        <h3 class="title-3">Social media</h3>
+                        <div class="social-icon">
+                            <a href="" class="fb-icon">
+                                <svg width="12" height="23" viewBox="0 0 12 23" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8 13.225H10.8571L12 8.625H8V6.325C8 5.1405 8 4.025 10.2857 4.025H12V0.161C11.6274 0.11155 10.2206 0 8.73486 0C5.632 0 3.42857 1.90555 3.42857 5.405V8.625H0V13.225H3.42857V23H8V13.225Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                            <a href="" class="linkedin-icon">
+                                <svg width="20" height="23" viewBox="0 0 18 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M9.57403 4.833V6.74213C9.97383 6.13314 10.5249 5.63839 11.1733 5.3063C11.8217 4.97421 12.5452 4.81616 13.273 4.84762C17.1599 4.84763 18.0003 7.27763 18.0003 10.4389V16.875H14.4003V11.169C14.4003 9.80775 14.1258 8.05725 12.0063 8.05725C9.95091 8.05725 9.59991 9.53888 9.59991 11.0677V16.875H6.01116V4.833H9.57403ZM3.60028 1.80675C3.59984 2.16338 3.49413 2.51194 3.2964 2.80873C3.09867 3.10553 2.81772 3.33735 2.48878 3.47513C2.15998 3.61179 1.79794 3.64754 1.44876 3.57782C1.09957 3.50811 0.779023 3.33608 0.527906 3.08363C0.276318 2.83102 0.105035 2.50966 0.0355977 2.15996C-0.0338399 1.81027 0.0016681 1.44785 0.137656 1.11828C0.273643 0.788711 0.50404 0.506708 0.799872 0.307731C1.0957 0.108755 1.44376 0.0016902 1.80028 0C2.03723 -1.666e-06 2.27185 0.0467793 2.49067 0.13766C2.7095 0.22854 2.90823 0.361731 3.07547 0.529592C3.2427 0.697453 3.37515 0.896681 3.46521 1.11585C3.55527 1.33501 3.60117 1.5698 3.60028 1.80675Z"
+                                        fill="white" />
+                                    <path d="M3.6 4.84766H0V16.875H3.6V4.84766Z" fill="" />
+                                </svg>
+                            </a>
+                            <a href="" class="insta-icon">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M9 0C6.55762 0 6.2505 0.01125 5.29087 0.054C4.33125 0.099 3.67762 0.24975 3.105 0.4725C2.50436 0.698421 1.9603 1.0528 1.51088 1.51088C1.05309 1.96053 0.698746 2.50452 0.4725 3.105C0.24975 3.6765 0.097875 4.33125 0.054 5.2875C0.01125 6.24937 0 6.55538 0 9.00113C0 11.4446 0.01125 11.7506 0.054 12.7103C0.099 13.6688 0.24975 14.3224 0.4725 14.895C0.703125 15.4867 1.01025 15.9885 1.51088 16.4891C2.01038 16.9897 2.51213 17.298 3.10388 17.5275C3.67763 17.7502 4.33013 17.9021 5.28863 17.946C6.24938 17.9888 6.55538 18 9 18C11.4446 18 11.7495 17.9888 12.7103 17.946C13.6676 17.901 14.3235 17.7502 14.8961 17.5275C15.4964 17.3015 16.04 16.9471 16.4891 16.4891C16.9897 15.9885 17.2969 15.4867 17.5275 14.895C17.7491 14.3224 17.901 13.6688 17.946 12.7103C17.9888 11.7506 18 11.4446 18 9C18 6.55538 17.9888 6.24938 17.946 5.28863C17.901 4.33125 17.7491 3.6765 17.5275 3.105C17.3013 2.5045 16.9469 1.96051 16.4891 1.51088C16.0398 1.05264 15.4957 0.698226 14.895 0.4725C14.3212 0.24975 13.6665 0.097875 12.7091 0.054C11.7484 0.01125 11.4435 0 8.99775 0H9.00113H9ZM8.19337 1.62225H9.00113C11.4041 1.62225 11.6887 1.63013 12.6371 1.674C13.5146 1.71338 13.9916 1.86075 14.3089 1.98338C14.7285 2.1465 15.0289 2.34225 15.3439 2.65725C15.6589 2.97225 15.8535 3.2715 16.0166 3.69225C16.1404 4.00838 16.2866 4.48538 16.326 5.36287C16.3699 6.31125 16.3789 6.59588 16.3789 8.99775C16.3789 11.3996 16.3699 11.6854 16.326 12.6337C16.2866 13.5112 16.1392 13.9871 16.0166 14.3044C15.8723 14.6952 15.642 15.0485 15.3427 15.3383C15.0277 15.6532 14.7285 15.8479 14.3078 16.011C13.9928 16.1348 13.5157 16.281 12.6371 16.3215C11.6887 16.3643 11.4041 16.3744 9.00113 16.3744C6.59813 16.3744 6.31238 16.3643 5.364 16.3215C4.4865 16.281 4.01062 16.1348 3.69338 16.011C3.30244 15.8669 2.94877 15.637 2.65837 15.3383C2.35884 15.048 2.12819 14.6944 1.98338 14.3032C1.86075 13.9871 1.71338 13.5101 1.674 12.6326C1.63125 11.6842 1.62225 11.3996 1.62225 8.9955C1.62225 6.5925 1.63125 6.309 1.674 5.36062C1.7145 4.48312 1.86075 4.00612 1.9845 3.68887C2.14762 3.26925 2.34337 2.96887 2.65837 2.65387C2.97337 2.33888 3.27262 2.14425 3.69338 1.98112C4.01062 1.85738 4.4865 1.71113 5.364 1.67062C6.19425 1.63238 6.516 1.62113 8.19337 1.62V1.62225ZM13.8049 3.11625C13.663 3.11625 13.5226 3.14419 13.3916 3.19846C13.2605 3.25274 13.1415 3.33229 13.0412 3.43257C12.9409 3.53286 12.8614 3.65192 12.8071 3.78295C12.7528 3.91398 12.7249 4.05442 12.7249 4.19625C12.7249 4.33808 12.7528 4.47852 12.8071 4.60955C12.8614 4.74058 12.9409 4.85964 13.0412 4.95993C13.1415 5.06021 13.2605 5.13976 13.3916 5.19404C13.5226 5.24831 13.663 5.27625 13.8049 5.27625C14.0913 5.27625 14.366 5.16246 14.5686 4.95993C14.7711 4.75739 14.8849 4.48268 14.8849 4.19625C14.8849 3.90982 14.7711 3.63511 14.5686 3.43257C14.366 3.23004 14.0913 3.11625 13.8049 3.11625ZM9.00113 4.3785C8.38808 4.36894 7.77926 4.48142 7.2101 4.70941C6.64094 4.9374 6.12283 5.27633 5.68592 5.70648C5.24901 6.13662 4.90203 6.64939 4.6652 7.21492C4.42836 7.78045 4.30639 8.38744 4.30639 9.00056C4.30639 9.61368 4.42836 10.2207 4.6652 10.7862C4.90203 11.3517 5.24901 11.8645 5.68592 12.2946C6.12283 12.7248 6.64094 13.0637 7.2101 13.2917C7.77926 13.5197 8.38808 13.6322 9.00113 13.6226C10.2145 13.6037 11.3717 13.1084 12.2231 12.2437C13.0745 11.3789 13.5516 10.2141 13.5516 9.00056C13.5516 7.78706 13.0745 6.62221 12.2231 5.75747C11.3717 4.89272 10.2145 4.39743 9.00113 4.3785ZM9.00113 5.99963C9.79687 5.99963 10.56 6.31573 11.1227 6.87841C11.6854 7.44109 12.0015 8.20425 12.0015 9C12.0015 9.79575 11.6854 10.5589 11.1227 11.1216C10.56 11.6843 9.79687 12.0004 9.00113 12.0004C8.20538 12.0004 7.44222 11.6843 6.87954 11.1216C6.31686 10.5589 6.00075 9.79575 6.00075 9C6.00075 8.20425 6.31686 7.44109 6.87954 6.87841C7.44222 6.31573 8.20538 5.99963 9.00113 5.99963Z"
+                                        fill="#0D0D0D" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="foot-last-cnt d-block">
+                Copyright © 2025 – CabinetMark LLC – All Rights Reserved
+            </a>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
