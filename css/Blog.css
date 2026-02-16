@@ -394,6 +394,7 @@ nav {
   border-radius: 50% !important;
   z-index: -1;
   transition: 0.5s linear;
+  box-shadow: var(--common-shadow);
 }
 .card-slide-btns .two-btn::after,
 .card-slide-btns .three-btn::after,
@@ -409,6 +410,7 @@ nav {
   z-index: -1;
   opacity: 0;
   transition: 0.5s linear;
+  box-shadow: var(--common-shadow);
 }
 .card-slide-btns .two-btn:hover::after,
 .card-slide-btns .three-btn:hover::after,
