@@ -7,6 +7,8 @@
   <title>Bootstrap demo</title>
   <!-- Custom css link -->
   <link rel="stylesheet" href="./css/about.css" />
+  <!-- Common-css link -->
+  <link rel="stylesheet" href="./css/common.css">
   <!-- Bootstrap css cdn link -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
@@ -39,14 +41,18 @@
               <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link shop" href="#">Shop now
-
+              <a class="nav-link shop">Shop now
                 <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M10.9917 0L11.97 0.979196L6.63841 6.31263C6.55298 6.3986 6.45139 6.46683 6.33949 6.51339C6.22759 6.55995 6.10759 6.58392 5.98638 6.58392C5.86518 6.58392 5.74518 6.55995 5.63328 6.51339C5.52138 6.46683 5.41979 6.3986 5.33436 6.31263L0 0.979196L0.978273 0.000923157L5.985 5.00673L10.9917 0Z"
                     fill="white" />
                 </svg>
               </a>
+              <ul class="dropdown-list">
+                <li><a href="collection.html">Collection</a></li>
+                <li><a href="product-details.html">Product details</a></li>
+                <li><a href="product.html">Product list</a></li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html">about us</a>
@@ -101,8 +107,8 @@
                       <a class="btn-close" data-bs-dismiss="modal" aria-label="Close"></a>
                     </div>
                     <div class="modal-footer">
-                      <a href="" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</a>
-                      <a href="" class="btn btn-primary">Add Products</a>
+                      <a href="index.html" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</a>
+                      <a href="product.html" class="btn btn-primary">Add Products</a>
                     </div>
                   </div>
                 </div>

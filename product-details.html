@@ -7,6 +7,8 @@
     <title>Bootstrap demo</title>
     <!-- Custom css link -->
     <link rel="stylesheet" href="./css/product-details.css" />
+    <!-- Common-css link -->
+    <link rel="stylesheet" href="./css/common.css">
     <!-- Bootstrap css cdn link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
@@ -20,7 +22,7 @@
         <nav class="navbar navbar-expand-xl">
             <div class="container nav-container">
                 <div class="nav-logo">
-                    <a class="navbar-brand d-block" href="index.html">
+                    <a class="navbar-brand d-block" href="product-details.html">
                         <img src="./assets/nav-logo.png" alt="" />
                     </a>
                 </div>
@@ -37,10 +39,10 @@
                     </div>
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link shop" href="#">Shop now
+                            <a class="nav-link shop">Shop now
                                 <svg width="12" height="7" viewBox="0 0 12 7" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -48,6 +50,11 @@
                                         fill="white" />
                                 </svg>
                             </a>
+                            <ul class="dropdown-list">
+                                <li><a href="collection.html">Collection</a></li>
+                                <li><a href="product-details.html">Product details</a></li>
+                                <li><a href="product.html">Product list</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="about.html">about us</a>
@@ -105,8 +112,9 @@
                                             <a class="btn-close" data-bs-dismiss="modal" aria-label="Close"></a>
                                         </div>
                                         <div class="modal-footer">
-                                            <a href="" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</a>
-                                            <a href="" class="btn btn-primary">Add Products</a>
+                                            <a href="index.html" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Cancel</a>
+                                            <a href="product.html" class="btn btn-primary">Add Products</a>
                                         </div>
                                     </div>
                                 </div>
@@ -222,6 +230,105 @@
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
                             been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
                             galley of type and scrambled it to make a type specimen book.</p>
+                        <div class="cart-add-btn">
+                            <div class="btn-title">Quantity</div>
+                            <div class="add-btn d-flex align-items-center">
+                                <a href="" class="minus-btn btn">
+                                    <svg width="10" height="2" viewBox="0 0 10 2" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.679688 0.5H9.32031C9.41948 0.5 9.5 0.580517 9.5 0.679688C9.49986 0.778735 9.41939 0.858398 9.32031 0.858398H0.679688C0.580606 0.858398 0.500143 0.778735 0.5 0.679688C0.5 0.580517 0.580517 0.5 0.679688 0.5Z"
+                                            fill="white" stroke="#E9E9E9" />
+                                    </svg>
+                                </a>
+                                <a href="" class="add-number btn">1</a>
+                                <a href="" class="plus-btn btn">
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5 0.5C5.09905 0.500143 5.17871 0.580606 5.17871 0.679688V9.32031C5.17871 9.41939 5.09905 9.49986 5 9.5C4.90083 9.5 4.82031 9.41948 4.82031 9.32031V0.679688C4.82031 0.580517 4.90083 0.5 5 0.5Z"
+                                            fill="white" stroke="#E9E9E9" />
+                                        <path
+                                            d="M0.679688 4.82031H9.32031C9.41948 4.82031 9.5 4.90083 9.5 5C9.49986 5.09905 9.41939 5.17871 9.32031 5.17871H0.679688C0.580606 5.17871 0.500143 5.09905 0.5 5C0.5 4.92562 0.544966 4.8612 0.609375 4.83398L0.679688 4.82031Z"
+                                            fill="white" stroke="#E9E9E9" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="main-cart-btn">
+                            <a href="" class="add-to-cart-btn btn">add to cart</a>
+                        </div>
+                        <div class="botom-part">
+                            <div class="btm-cnt-title btm-fst-cnt">
+                                <div>SPECIFICATIONS</div>
+                                <a href="">
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.7128 4.32049H10V5.6998H5.7128V10H4.2872V5.6998H0V4.32049H4.2872V0H5.7128V4.32049Z"
+                                            fill="#0D0D0D" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <div class="btm-cnt-title btm-scnd-cnt">
+                                <div>Reviews</div>
+                                <a href="">
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.7128 4.32049H10V5.6998H5.7128V10H4.2872V5.6998H0V4.32049H4.2872V0H5.7128V4.32049Z"
+                                            fill="#0D0D0D" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="btm-cnt-title btm-third-cnt">
+                                <div>Materials</div>
+                                <a href="">
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.7128 4.32049H10V5.6998H5.7128V10H4.2872V5.6998H0V4.32049H4.2872V0H5.7128V4.32049Z"
+                                            fill="#0D0D0D" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="btm-cnt-title btm-four-cnt">
+                                <div>Shipping & Returns</div>
+                                <a href="">
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.7128 4.32049H10V5.6998H5.7128V10H4.2872V5.6998H0V4.32049H4.2872V0H5.7128V4.32049Z"
+                                            fill="#0D0D0D" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="btm-cnt-title btm-fifth-cnt">
+                                <div>Installation Instructions</div>
+                                <a href="">
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.7128 4.32049H10V5.6998H5.7128V10H4.2872V5.6998H0V4.32049H4.2872V0H5.7128V4.32049Z"
+                                            fill="#0D0D0D" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="btm-cnt-title btm-sixth-cnt">
+                                <div>Care Instructions</div>
+                                <a href="">
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.7128 4.32049H10V5.6998H5.7128V10H4.2872V5.6998H0V4.32049H4.2872V0H5.7128V4.32049Z"
+                                            fill="#0D0D0D" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -7,6 +7,8 @@
     <title>Bootstrap demo</title>
     <!-- Custom css link -->
     <link rel="stylesheet" href="./css/contact-us.css" />
+    <!-- Common-css link -->
+    <link rel="stylesheet" href="./css/common.css">
     <!-- Bootstrap css cdn link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
@@ -40,8 +42,7 @@
                             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link shop" href="#">Shop now
-
+                            <a class="nav-link shop">Shop now
                                 <svg width="12" height="7" viewBox="0 0 12 7" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -49,6 +50,11 @@
                                         fill="white" />
                                 </svg>
                             </a>
+                            <ul class="dropdown-list">
+                                <li><a href="collection.html">Collection</a></li>
+                                <li><a href="product-details.html">Product details</a></li>
+                                <li><a href="product.html">Product list</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="about.html">about us</a>
@@ -106,8 +112,9 @@
                                             <a class="btn-close" data-bs-dismiss="modal" aria-label="Close"></a>
                                         </div>
                                         <div class="modal-footer">
-                                            <a href="" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</a>
-                                            <a href="" class="btn btn-primary">Add Products</a>
+                                            <a href="index.html" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Cancel</a>
+                                            <a href="product.html" class="btn btn-primary">Add Products</a>
                                         </div>
                                     </div>
                                 </div>
@@ -271,13 +278,18 @@
                             been the industry's standard dummy text ever since the
                         </p>
                         <form class="contact-form">
-                            <input type="text" name="name" id="name" autocomplete="off" placeholder="Name" class="input-box input-field">
-                            <input type="email" name="email" id="email" autocomplete="off" placeholder="Email" class="input-box input-field">
+                            <input type="text" name="name" id="name" autocomplete="off" placeholder="Name"
+                                class="input-box input-field">
+                            <input type="email" name="email" id="email" autocomplete="off" placeholder="Email"
+                                class="input-box input-field">
                             <div class="one-line">
-                                <input type="text" name="Phone" id="Phone" autocomplete="off" placeholder="Phone" class="input-ph input-field">
-                                <input type="text" name="subject" id="subject" autocomplete="off" placeholder="Subject" class="input-sub input-field">
+                                <input type="text" name="Phone" id="Phone" autocomplete="off" placeholder="Phone"
+                                    class="input-ph input-field">
+                                <input type="text" name="subject" id="subject" autocomplete="off" placeholder="Subject"
+                                    class="input-sub input-field">
                             </div>
-                            <textarea placeholder="Message" id="Message" name="Message" class="textarea input-field" required></textarea>
+                            <textarea placeholder="Message" id="Message" name="Message" class="textarea input-field"
+                                required></textarea>
                             <a href="" class="submit-btn btn">SUBMIT</a>
                         </form>
                     </div>
